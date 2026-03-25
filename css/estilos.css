@@ -1,0 +1,119 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+
+/* FONDO GENERAL */
+body{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color:#f4f6fb;
+    margin:0;
+    text-align:center;
+}
+
+/* TÍTULOS */
+h1{
+    font-family: 'Playfair Display', serif;
+    color:#6ccfb6;
+    margin-top:20px;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    background:#6ccfb6;
+    color:white;
+    padding:10px;
+    margin-top:30px;
+    border-radius:8px;
+}
+
+/* MENÚ */
+nav{
+    background:#6ccfb6;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* TABLAS */
+table{
+    margin:auto;
+    border-collapse:collapse;
+}
+
+td{
+    padding:15px;
+}
+
+/* IMÁGENES */
+img{
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:transform 0.3s;
+}
+
+img:hover{
+    transform:scale(1.05);
+}
+
+/* VIDEOS */
+video{
+    border-radius:10px;
+    margin-top:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* BOTONES */
+input[type="submit"]{
+    background:#6ccfb6;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background:#4aa892;
+}
+
+/* FOOTER */
+footer{
+    margin-top:50px;
+    background:#6ccfb6;
+    color:white;
+    padding:30px;
+}
+
+footer ul{
+    list-style:none;
+    padding:0;
+}
+
+footer li{
+    margin:6px 0;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/* CONTENEDOR DEL FOOTER */
+.footer-container{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+}
