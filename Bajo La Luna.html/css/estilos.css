@@ -1,0 +1,190 @@
+/* FONDO GENERAL */
+body{
+font-family:'Poppins', Arial, Helvetica, sans-serif;
+background-color:#bfcae7;
+margin:0;
+text-align:center;
+}
+
+
+/* TITULOS */
+h1{
+font-family:'Playfair Display', serif;
+color:#6c6ccf;
+margin-top:20px;
+}
+
+h2{
+font-family:'Playfair Display', serif;
+background:#6c6ccf;
+color:white;
+padding:10px;
+border-radius:8px;
+}
+
+
+/* MENU */
+nav{
+background:#bfcae7;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+
+
+table{
+margin:auto;
+border-collapse:collapse;
+}
+
+td{
+padding:15px;
+}
+
+
+/* IMAGENES */
+img{
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+transition:transform 0.3s;
+}
+
+img:hover{
+transform:scale(1.05);
+}
+
+
+/* VIDEOS */
+video{
+border-radius:10px;
+margin-top:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+/* BOTONES */
+input[type="submit"]{
+background:#6c6ccf;
+color:white;
+border:none;
+padding:8px 12px;
+border-radius:6px;
+cursor:pointer;
+}
+
+input[type="submit"]:hover{
+background:#4b4bb0;
+}
+
+
+/* MENU ESTILO BOTONES */
+.menu{
+background-color:#bfcae7;
+padding:15px;
+text-align:center;
+}
+
+
+/* BOTONES MENU */
+.menu a{
+margin:20px;
+text-decoration:none;
+color:#6c6ccf;
+padding:8px 18px;
+border:2px solid #6c6ccf;
+border-radius:12px;
+font-weight:bold;
+}
+
+.menu a:hover{
+background-color:#6c6ccf;
+color:white;
+}
+
+.menu a:active{
+background-color:darkgoldenrod;
+color:white;
+}
+
+
+/* SELECT MENU */
+.menu select{
+margin:20px;
+padding:8px 18px;
+border:2px solid #6c6ccf;
+border-radius:12px;
+color:#6c6ccf;
+font-weight:bold;
+background-color:transparent;
+cursor:pointer;
+}
+
+.menu select:hover{
+background-color:#6c6ccf;
+color:white;
+}
+
+.menu select:active{
+background-color:darkgoldenrod;
+color:white;
+}
+
+
+/* FOOTER (SIEMPRE VISIBLE SIN HOVER) */
+footer{
+margin-top:50px;
+background:#6c6ccf;
+color:white;
+padding:30px;
+}
+
+
+/* CONTENIDO DEL FOOTER */
+.footer-container{
+display:flex;
+justify-content:center;
+gap:80px;
+flex-wrap:wrap;
+}
+
+
+footer ul{
+list-style:none;
+padding:0;
+}
+
+footer li{
+margin:6px 0;
+}
+
+footer a{
+color:white;
+text-decoration:none;
+}
+
+footer a:hover{
+text-decoration:underline;
+}
+/* Enlaces siempre visibles en blanco */
+.footer-column a {
+   color: white; 
+text-decoration: none;
+font-size: 1rem;
+transition: 0.3s;
+display: inline-block;
+}
+
+ .footer-column a:hover {
+text-decoration: underline;
+transform: translateX(5px);
+}

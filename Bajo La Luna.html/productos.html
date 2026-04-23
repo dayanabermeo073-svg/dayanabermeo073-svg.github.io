@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="Css/Diseño.css">
+
+<title>Bajo la luna</title>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-dark text-white text-center p-4">
+    <h1>Bajo la luna</h1>
+    <p>Aquí encontrarás un libro que encaje contigo</p>
+</header>
+
+<nav>
+<a class="btn btn-outline-dark me-2" href="index.html">Inicio</a>
+        <a class="btn btn-outline-dark" href="productos.html">Productos</a>
+        <a class="btn btn-outline-dark me-2" href="pedidos.html">Pedidos</a>
+        <a class="btn btn-outline-dark" href="sucursales.html">Sucursales</a>
+
+  <hr>
+
+<div class="container mt-4">
+
+  <div class="row">
+
+   <!-- SECCION GENERICA -->
+<script>
+function crearSeccion(titulo, imagenes) {
+    let html = `<h2 class="mt-5 mb-3">${titulo}</h2><div class="row">`;
+    imagenes.forEach(libro => {
+        html += `
+        <div class="col-md-4 col-lg-2 mb-4">
+            <div class="card h-100 shadow">
+                <img src="${libro.img}" class="card-img-top">
+                <div class="card-body text-center">
+                    <p class="fw-bold">S/ ${libro.precio}</p>
+                    <a href="Pedidos.html" class="btn btn-primary w-100">Añadir</a>
+                </div>
+            </div>
+        </div>`;
+    });
+    html += `</div>`;
+    document.write(html);
+}
+
+crearSeccion("Lo más vendidos", [
+    {img:"img/a1.png", precio:"99.90"},
+    {img:"img/a2.jpg", precio:"59.00"},
+    {img:"img/a3.jpg", precio:"59.90"},
+    {img:"img/a4.jpg", precio:"79.00"},
+    {img:"img/a5.jpg", precio:"119.90"},
+    {img:"img/a6.png", precio:"69.90"}
+]);
+
+crearSeccion("Novedades", [
+    {img:"img/b1.png", precio:"79.90"},
+    {img:"img/b2.jpg", precio:"19.90"},
+    {img:"img/b3.jpg", precio:"79.00"},
+    {img:"img/b4.png", precio:"39.00"},
+    {img:"img/b5.png", precio:"89.00"},
+    {img:"img/b6.jpg", precio:"49.00"}
+]);
+
+
+crearSeccion("Infantil", [
+    {img:"img/c1.jpg", precio:"39.90"},
+    {img:"img/c2.jpg", precio:"109.90"},
+    {img:"img/c3.jpg", precio:"69.00"},
+    {img:"img/c4.jpg", precio:"89.00"},
+    {img:"img/c5.jpg", precio:"119.00"},
+    {img:"img/c6.jpg", precio:"89.00"}
+]);
+
+crearSeccion("No ficción", [
+    {img:"img/d1.jpg", precio:"89.00"},
+    {img:"img/d2.jpg", precio:"69.00"},
+    {img:"img/d3.jpg", precio:"79.00"},
+    {img:"img/d4.png", precio:"75.00"},
+    {img:"img/d5.jpg", precio:"79.00"},
+    {img:"img/d6.jpg", precio:"69.00"}
+]);
+
+crearSeccion("Mangas y comics", [
+    {img:"img/e1.jpg", precio:"39.00"},
+    {img:"img/e2.jpg", precio:"40.00"},
+    {img:"img/e3.jpg", precio:"39.00"},
+    {img:"img/e4.jpg", precio:"29.00"},
+    {img:"img/e5.jpg", precio:"199.00"},
+    {img:"img/e6.png", precio:"35.00"}
+]);
+
+crearSeccion("Estuches", [
+    {img:"img/f1.jpg", precio:"89.00"},
+    {img:"img/f2.png", precio:"279.90"},
+    {img:"img/f3.jpg", precio:"429.00"},
+    {img:"img/f4.png", precio:"169.00"},
+    {img:"img/f5.jpg", precio:"200.00"},
+    {img:"img/f6.gif", precio:"299.00"}
+]);
+
+crearSeccion("Ediciones especiales", [
+    {img:"img/g1.jpg", precio:"129.00"},
+    {img:"img/g2.jpg", precio:"233.00"},
+    {img:"img/g3.jpg", precio:"250.00"},
+    {img:"img/g4.jpg", precio:"163.00"},
+    {img:"img/g5.jpg", precio:"150.00"},
+    {img:"img/g6 149.00.png", precio:"149.00"}
+]);
+
+crearSeccion("Más productos", [
+    {img:"img/i1.jpg", precio:"23.00"},
+    {img:"img/i2.jpg", precio:"25.00"},
+    {img:"img/i3.jpg", precio:"25.00"},
+    {img:"img/i4.jpg", precio:"15.00"},
+    {img:"img/i5.jpg", precio:"13.00"},
+    {img:"img/i6.jpg", precio:"18.00"}
+]);
+
+</script>
+
+<script>
+function crearSeccionVideos(titulo, videos) {
+    let html = `<h2 class="mt-5 mb-3">${titulo}</h2><div class="row">`;
+
+    videos.forEach(video => {
+        html += `
+        <div class="col-md-4 col-lg-2 mb-4">
+            <div class="card h-100 shadow text-center">
+                <video class="w-100" controls>
+                    <source src="${video.src}" type="video/mp4">
+                </video>
+                <div class="card-body">
+                    <p class="fw-bold">${video.titulo}</p>
+                    <button class="btn btn-success w-100">Más detalles</button>
+                </div>
+            </div>
+        </div>`;
+    });
+
+    html += `</div>`;
+    document.write(html);
+}
+crearSeccionVideos("Próximamente en cines", [
+    {src:"img/h1.mp4", titulo:"Boulevard"},
+    {src:"img/h2.mp4", titulo:"Culpa mía - Londres"},
+    {src:"img/h3.mp4", titulo:"Boku no kokoro"},
+    {src:"img/h4.mp4", titulo:"Yo antes de ti"},
+    {src:"img/h5.mp4", titulo:"La odisea"}
+]);
+</script>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white mt-5 p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Contactos</h5>
+                <p>Telegram | Gmail | TikTok | YouTube | Instagram | WhatsApp</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Políticas</h5>
+                <p>Política de cookies | Términos y condiciones</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

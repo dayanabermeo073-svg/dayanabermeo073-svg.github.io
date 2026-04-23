@@ -1,0 +1,112 @@
+/* FUENTES (opcional si usas Google Fonts) */
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #bfcae7;
+    margin: 0;
+}
+
+/* TITULOS */
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    background:#4b4bb0;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* NAVBAR (mejor integrado con Bootstrap) */
+.navbar {
+    background-color: #bfcae7 !important;
+}
+
+.navbar a {
+    color: #6c6ccf !important;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* TARJETAS (reemplaza tablas) */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* BOTONES */
+.btn-primary {
+    background-color: #6c6ccf;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #4b4bb0;
+}
+
+/* VIDEOS */
+video {
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    background: #6c6ccf;
+    color: white;
+    padding: 30px;
+}
+
+/* FOOTER COLUMNAS */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 6px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* EFECTO EXTRA EN LINKS */
+.footer-column a {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    transform: translateX(5px);
+}

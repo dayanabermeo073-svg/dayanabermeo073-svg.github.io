@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="Css/Diseño.css">
+
+<title>Bajo la luna</title>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-dark text-white text-center p-4">
+    <h1>Bajo la luna</h1>
+    <p>Aquí encontrarás un libro que encaje contigo</p>
+</header>
+
+<nav>
+        <a class="btn btn-outline-dark me-2" href="index.html">Inicio</a>
+        <a class="btn btn-outline-dark" href="productos.html">Productos</a>
+        <a class="btn btn-outline-dark me-2" href="pedidos.html">Pedidos</a>
+        <a class="btn btn-outline-dark" href="sucursales.html">Sucursales</a>
+</nav>
+
+  <hr>
+
+  <h2>Formulario</h2>
+
+  <form>
+    <label>Nombre:</label><br>
+<input type="text" required><br><br>
+
+<label>Producto:</label><br>
+<input type="text" required><br><br>
+
+<label>Cantidad:</label><br>
+<input type="number" min="1" required><br><br>
+
+<label>Dirección:</label><br>
+<input type="text" required><br><br>
+
+<label>Teléfono:</label><br>
+<input type="tel" required><br><br>
+
+    <label>Comentarios:</label><br>
+<textarea rows="4" cols="30"></textarea><br><br>
+  <label>Método de pago:</label><br>
+  <select>
+<option>Efectivo</option>
+<option>Yape</option>
+<option>Plin</option>
+<option>Transferencia</option>
+</select>
+
+    <br><br>
+    <input type="submit" value="Confirmar pedido">
+  </form>
+ 
+  <!-- FOOTER -->
+<footer class="bg-dark text-white mt-5 p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Contactos</h5>
+                <p>Telegram | Gmail | TikTok | YouTube | Instagram | WhatsApp</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Políticas</h5>
+                <p>Política de cookies | Términos y condiciones</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
